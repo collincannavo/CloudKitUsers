@@ -47,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				B694427A1EFAD9AC00600371 /* CloudKitUsers */,
+				B6A28AE01F2EE1B800786B97 /* Resources */,
 				B69442791EFAD9AC00600371 /* Products */,
 				B69442901EFAE13500600371 /* Frameworks */,
 			);
@@ -64,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				B694428F1EFAE13100600371 /* CloudKitUsers.entitlements */,
-				B6A28AE01F2EE1B800786B97 /* Resources */,
 				B6A28ADF1F2EE1AF00786B97 /* Storyboards */,
 				B6A28ADE1F2EE1A900786B97 /* Model */,
 				B6A28AE11F2EE1C000786B97 /* ModelController */,
@@ -106,6 +106,7 @@
 				B69442871EFAD9AC00600371 /* Info.plist */,
 			);
 			name = Resources;
+			path = CloudKitUsers;
 			sourceTree = "<group>";
 		};
 		B6A28AE11F2EE1C000786B97 /* ModelController */ = {

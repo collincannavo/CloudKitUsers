@@ -23,6 +23,8 @@ class User {
     var age: String
     
     // this is the reference to the pre-made Apple 'Users' record
+    // Add more references
+    
     let appleUserReference: CKReference
     
     init(username: String, email: String, age: String, appleUserReference: CKReference) {

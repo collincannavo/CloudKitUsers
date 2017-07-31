@@ -10,14 +10,12 @@ import UIKit
 
 class UserViewController: UIViewController {
 
-    
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var ageTextField: UITextField!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +32,6 @@ class UserViewController: UIViewController {
         usernameLabel.text = currentUser.username
         emailLabel.text = currentUser.email
         ageLabel.text = currentUser.age
-        
         
     }
   
