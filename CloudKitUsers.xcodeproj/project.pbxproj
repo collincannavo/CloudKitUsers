@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		B694427C1EFAD9AC00600371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694427B1EFAD9AC00600371 /* AppDelegate.swift */; };
-		B694427E1EFAD9AC00600371 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694427D1EFAD9AC00600371 /* ViewController.swift */; };
 		B69442811EFAD9AC00600371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B694427F1EFAD9AC00600371 /* Main.storyboard */; };
 		B69442831EFAD9AC00600371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69442821EFAD9AC00600371 /* Assets.xcassets */; };
 		B69442861EFAD9AC00600371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69442841EFAD9AC00600371 /* LaunchScreen.storyboard */; };
+		B694428E1EFADC3600600371 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B694428D1EFADC3600600371 /* User.swift */; };
+		B69442921EFAE13500600371 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69442911EFAE13500600371 /* CloudKit.framework */; };
+		B69442941EFAE47800600371 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69442931EFAE47800600371 /* UserController.swift */; };
+		B69442961EFAF22900600371 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69442951EFAF22900600371 /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B69442781EFAD9AC00600371 /* CloudKitUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B694427B1EFAD9AC00600371 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B694427D1EFAD9AC00600371 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B69442801EFAD9AC00600371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B69442821EFAD9AC00600371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B69442851EFAD9AC00600371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B69442871EFAD9AC00600371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B694428D1EFADC3600600371 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B694428F1EFAE13100600371 /* CloudKitUsers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CloudKitUsers.entitlements; sourceTree = "<group>"; };
+		B69442911EFAE13500600371 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		B69442931EFAE47800600371 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		B69442951EFAF22900600371 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69442921EFAE13500600371 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				B694427A1EFAD9AC00600371 /* CloudKitUsers */,
 				B69442791EFAD9AC00600371 /* Products */,
+				B69442901EFAE13500600371 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,65 @@
 		B694427A1EFAD9AC00600371 /* CloudKitUsers */ = {
 			isa = PBXGroup;
 			children = (
-				B694427B1EFAD9AC00600371 /* AppDelegate.swift */,
-				B694427D1EFAD9AC00600371 /* ViewController.swift */,
-				B694427F1EFAD9AC00600371 /* Main.storyboard */,
-				B69442821EFAD9AC00600371 /* Assets.xcassets */,
-				B69442841EFAD9AC00600371 /* LaunchScreen.storyboard */,
-				B69442871EFAD9AC00600371 /* Info.plist */,
+				B694428F1EFAE13100600371 /* CloudKitUsers.entitlements */,
+				B6A28AE01F2EE1B800786B97 /* Resources */,
+				B6A28ADF1F2EE1AF00786B97 /* Storyboards */,
+				B6A28ADE1F2EE1A900786B97 /* Model */,
+				B6A28AE11F2EE1C000786B97 /* ModelController */,
+				B6A28AE21F2EE1C500786B97 /* ViewController */,
 			);
 			path = CloudKitUsers;
+			sourceTree = "<group>";
+		};
+		B69442901EFAE13500600371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B69442911EFAE13500600371 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6A28ADE1F2EE1A900786B97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B694428D1EFADC3600600371 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6A28ADF1F2EE1AF00786B97 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B694427F1EFAD9AC00600371 /* Main.storyboard */,
+				B69442841EFAD9AC00600371 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B6A28AE01F2EE1B800786B97 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B694427B1EFAD9AC00600371 /* AppDelegate.swift */,
+				B69442821EFAD9AC00600371 /* Assets.xcassets */,
+				B69442871EFAD9AC00600371 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B6A28AE11F2EE1C000786B97 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				B69442931EFAE47800600371 /* UserController.swift */,
+			);
+			name = ModelController;
+			sourceTree = "<group>";
+		};
+		B6A28AE21F2EE1C500786B97 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B69442951EFAF22900600371 /* UserViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,8 +156,16 @@
 				TargetAttributes = {
 					B69442771EFAD9AC00600371 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = X458A5BXZ4;
+						DevelopmentTeam = F83BXD8Z2Y;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -137,7 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B694427E1EFAD9AC00600371 /* ViewController.swift in Sources */,
+				B69442941EFAE47800600371 /* UserController.swift in Sources */,
+				B69442961EFAF22900600371 /* UserViewController.swift in Sources */,
+				B694428E1EFADC3600600371 /* User.swift in Sources */,
 				B694427C1EFAD9AC00600371 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,10 +333,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X458A5BXZ4;
+				CODE_SIGN_ENTITLEMENTS = CloudKitUsers/CloudKitUsers.entitlements;
+				DEVELOPMENT_TEAM = F83BXD8Z2Y;
 				INFOPLIST_FILE = CloudKitUsers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.collincannavo.CloudKitUsers;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.collin-cannavo.CloudKitUsers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -276,10 +347,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X458A5BXZ4;
+				CODE_SIGN_ENTITLEMENTS = CloudKitUsers/CloudKitUsers.entitlements;
+				DEVELOPMENT_TEAM = F83BXD8Z2Y;
 				INFOPLIST_FILE = CloudKitUsers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.collincannavo.CloudKitUsers;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.collin-cannavo.CloudKitUsers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -304,6 +376,7 @@
 				B694428C1EFAD9AC00600371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
